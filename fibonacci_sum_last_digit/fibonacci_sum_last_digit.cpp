@@ -29,9 +29,15 @@ int fibonacci_sum_naive(long long n) {
             
             for (i=2; i<=n; i++ )
             {
-            int f[i];
+            int array[i];
+
+			int f[i]=0;
                 
-                
+			array[i] = (array[i - 1] + array[i - 2]) % 10;
+
+			f[i] = array[i] + f[i];
+
+
                 
             }
     

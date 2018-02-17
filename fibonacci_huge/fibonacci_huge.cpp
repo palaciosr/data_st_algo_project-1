@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-long long fib_huge_fast(long long n, long long m) //not sure if the longs are needed
+long long fib_huge_fast(long long n, long long m) 
     {
         long long i;
         long long j;
@@ -10,7 +10,7 @@ long long fib_huge_fast(long long n, long long m) //not sure if the longs are ne
         F[1]= 0;
         int m;
         
-        for (i=2; i<=n+1; i++) // not sure about the 2
+        for (i=2; i<=n+1; i++) 
             
             F[i]= (F[i-1]+ F[i-2])%m;  // F[i]%m
             F[i]= F[i]%m;
