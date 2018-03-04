@@ -1,5 +1,8 @@
 #include <iostream>
 using namespace std;
+// this program calculates the fib sequences for very large values
+// however we only consider the very last digit 
+// the digit m which is has to be inputted by the user 
 
 long long fib_huge_fast(long long n, long long m) 
     {
