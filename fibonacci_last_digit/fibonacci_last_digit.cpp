@@ -2,26 +2,10 @@
 using namespace std;
 // this program returns large values of a fib sequence 
 // however it only return the last digit
-//
+// by taking the modules we know that the last digit in any sequence
+// has to be between 0-9 
 
-/*
-again below is a very slow function (algo)
-int get_fibonacci_last_digit_naive(int n) {
-    if (n <= 1)
-        return n;
 
-    int previous = 0;
-    int current  = 1;
-
-    for (int i = 0; i < n - 1; ++i) {
-        int tmp_previous = previous;
-        previous = current;
-        current = tmp_previous + current;
-    }
-
-    return current % 10; // calculates remiander
-}
- */
 
 int get_fibonacci_last_digit_fast(int n)
 {
