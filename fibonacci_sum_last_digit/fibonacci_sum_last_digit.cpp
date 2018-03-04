@@ -1,5 +1,8 @@
 #include <iostream>
 
+// this program still needs to be worked on
+// the idea is to get a fast algo to calculate the fib sequence 
+
 int fibonacci_sum_naive(long long n) {
     if (n <= 1)
         return n;
