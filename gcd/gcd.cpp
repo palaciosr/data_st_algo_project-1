@@ -1,25 +1,11 @@
 #include <iostream>
 using namespace std;
+// this program used the Eucildean algorithmn to
+// calculate the greatest common divisor 
+// We essentially use recursion 
+// Whereby the function calls itself 
 
-/*
-int gcd_naive(int a, int b)
-{
-  int current_gcd = 1;  //should not include the brackets inside the for loop
-  for (int d = 2; d <= a && d <= b; d++)
-  {
-    if (a % d == 0 && b % d == 0)
-    {
-      if (d > current_gcd)
-      {
-        current_gcd = d;
-      }
-    }
-  }
-  return current_gcd; // going to have to delete this entire gcd naive function
-}
 
- */
- 
  
  int Euclid_gcd_fast(int a, int b )
 {
