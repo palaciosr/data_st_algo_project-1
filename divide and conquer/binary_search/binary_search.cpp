@@ -4,14 +4,24 @@
 #include <math.h>       /* floor */  /// allows for floor function
 #include <algorithm>   //
 
+// The binary search algorithmn allows for any array   
+// to be sorted in ascending order 
+// Effectively binary search splits the array into two parts 
+// The partitions in the left are less than those on the right
+// By making multiple comparisons with the mid middle value 
+// Where the middle value is less than , equal to, or greater than the 
+// Values it is being compared to
+
 using namespace std;
-long binary_search( vector<long> &a,int x) // a passed by ref a is a[i] and x is m passed by value took constant off of  vector 'a'
+long binary_search( vector<long> &a,int x) 
+    // a is passed by ref  (a[i] is a vector) 
+    //x is m passed by value 
 {
 
     int mid;//i;
     int left = 0; // min
-    int right = a.size(); //  took int off for now
-    while(left<=right) //
+    int right = a.size(); 
+    while(left<=right) 
     {
         
         mid= left +floor((right- left)/2);
@@ -27,7 +37,7 @@ long binary_search( vector<long> &a,int x) // a passed by ref a is a[i] and x is
     else
         right= mid-1;
     }
-    return -1; // any negative number
+    return -1; // any negative number in an vector/array in  C++ means it is not a valid value 
 }
 // first two for loops are for inputting the  sequence a[i] then b[i]
 // where a[i] is sorted and b[i] is not , we look for the values of b[i]
@@ -45,6 +55,8 @@ int main()
     cin >> a[i];
   }
   //  sort(a.begin(),a.end());
+  // the above commented sort would be an easy way to sort the array
+  // As it would take advantage of the #algorithmn library 
 
    int m; // x in binary search function
   cin >> m;
@@ -59,9 +71,4 @@ int main()
           cout << binary_search(a, b[i]) << ' ';
     }
 }
-//return a[left-1];
-//right= mid-1;
-/*if  (right< left)
- {
- //return -1;
- }*/
+
