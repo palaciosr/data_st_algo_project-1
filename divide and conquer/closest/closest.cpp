@@ -6,14 +6,32 @@
 #include <string>
 #include <cmath>
 
-using std::vector;
+/*using std::vector;
 using std::string;
 using std::pair;
-using std::min;
+using std::min; */
+using namespace std;
+
+// not yet finished
 
 
 double minimal_distance(vector<int> x, vector<int> y) {
   //write your code here
+  /*
+  vector <int> z;
+  int low=0; 
+  
+   for (int i=0;i<N ; i++)
+   {
+    z[i]=x[i]*y[i];
+    //low[i]=z[i] 
+    // if (low[i]<z[i])
+    // return the lowest in the iteration of those pairs 
+    
+    min (low, z[i])
+   }
+  
+  */
   return 0.;
 }
 
